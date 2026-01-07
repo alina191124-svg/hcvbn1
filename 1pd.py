@@ -5,4 +5,5 @@ df.info()
 print('Кол-во пассажиров: ', len(df))
 print('Кол-во пропущенных значений в каждом столбце')
 print(df.isnull().sum())
-print(df['Age'].isnull().sum())
+
+print(df['Age'].isnull().sum()) 
