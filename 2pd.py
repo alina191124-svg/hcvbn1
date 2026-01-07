@@ -1,0 +1,10 @@
+import pandas as pd
+df=pd.read_csv('titanic.csv')
+print('Статистика для числовых столбцов')
+print(df.describe())
+print('Частота знач. для категориальных столбцов')
+print(df.describe(include=['object']))
+print('Кол-во мужчин')
+print((df['Sex'] == 'male').sum())
+print('Пассажиры первого класса')
+print((df['Pclass'] == 1).sum())
