@@ -6,5 +6,5 @@ print('Частота знач. для категориальных столбц
 print(df.describe(include=['object']))
 print('Кол-во мужчин')
 print((df['Sex'] == 'male').sum())
-print('Пассажиры первого класса')
+print('Каюты первого класса')
 print((df['Pclass'] == 1).sum())
