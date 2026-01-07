@@ -1,0 +1,11 @@
+import pandas as pd
+df=pd.read_csv('titanic.csv')
+print('Кол-во выживших')
+print(df['Survived'].sum())
+print('Процент выживших')
+print('Всего:')
+print(df['Survived'].mean() * 100)
+print('Женщин:')
+print(df[df['Sex'] == 'female']['Survived'].mean() * 100)
+print('Мужчин:')
+print(df[df['Sex'] == 'male']['Survived'].mean() * 100)
